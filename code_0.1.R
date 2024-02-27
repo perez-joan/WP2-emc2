@@ -36,9 +36,9 @@ population <- st_read("C:/Users/jperez/Documents/Current 1/France - EMC2/Raw dat
 # keep population squares for Côte d'azur only
 population <- population[administrative,]
 
-# Remove columns with wrong format for geopandas (in python)
-administrative <- administrative[, c(1:10, 13:18, 21:26)]
-building <- building[, c(1:7, 11:28)]
+# Remove columns with wrong format for geopandas in python
+administrative <- administrative[, c(1:8, 13:18, 21:26)]
+building <- building[, c(1:6, 11:28)]
 road <- road[, c(1:7, 13:43, 46:85)]
 
 ## 2. Create GPKG for Côte d'Azur
